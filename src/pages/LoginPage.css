@@ -1,0 +1,159 @@
+.login-page {
+  width: 100%;
+  min-height: 82vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 100px 20px;
+  box-sizing: border-box;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 480px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 60px 50px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.login-header {
+  margin-bottom: 40px;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.login-desc {
+  font-size: 1rem;
+  color: #888;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  text-align: left;
+}
+
+.input-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+.login-input::placeholder {
+  color: #ccc;
+}
+
+.login-input:focus {
+  border-color: #f08b2e;
+  box-shadow: 0 0 0 3px rgba(240, 139, 46, 0.1);
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-top: -5px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #555;
+}
+
+.checkbox-label input {
+  accent-color: #f08b2e;
+  width: 16px;
+  height: 16px;
+}
+
+.find-pw-link {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.find-pw-link:hover {
+  color: #f08b2e;
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: #f08b2e;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.2s;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #d67a25;
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
+
+.signup-link-area {
+  margin-top: 30px;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.signup-link {
+  color: #f08b2e;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 40px 25px;
+  }
+  .login-title {
+    font-size: 1.6rem;
+  }
+}

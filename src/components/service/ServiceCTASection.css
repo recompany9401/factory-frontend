@@ -1,0 +1,112 @@
+.cta-section {
+  position: relative;
+  width: 100%;
+  padding: 180px 0;
+  overflow: hidden;
+}
+
+.cta-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/sub/service_cta_bg.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.cta-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cta-content {
+  max-width: 600px;
+}
+
+.cta-subtitle {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #f08b2e;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.cta-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.3;
+  margin-bottom: 24px;
+  word-break: keep-all;
+}
+
+.cta-desc {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 50px;
+  word-break: keep-all;
+}
+
+.cta-btn-group {
+  display: flex;
+  gap: 16px;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-btn svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.cta-btn.primary {
+  background-color: #91c31d;
+  color: #fff;
+  border: 2px solid #91c31d;
+  box-shadow: 0 10px 20px rgba(145, 195, 29, 0.3);
+}
+
+.cta-btn.primary:hover {
+  background-color: #82b01a;
+  border-color: #82b01a;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(145, 195, 29, 0.4);
+}
+
+.cta-btn.outline {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #ccc;
+}
+
+.cta-btn.outline:hover {
+  border-color: #333;
+  background-color: #333;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.cta-btn:hover svg {
+  transform: translateX(5px);
+}

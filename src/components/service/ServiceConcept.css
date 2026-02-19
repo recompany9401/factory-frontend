@@ -1,0 +1,74 @@
+.service-concept-section {
+  width: 100%;
+  height: 60vw;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.concept-container {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.concept-title {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 7rem;
+}
+
+.typing-text {
+  color: #f08b2e;
+  position: relative;
+}
+
+.static-text {
+  color: #000;
+}
+
+.cursor {
+  font-weight: 100;
+  color: #e1e1e1;
+  animation: blink 1s step-end infinite;
+  margin-left: 1px;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.concept-desc-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.desc-line {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+  word-break: keep-all;
+  background: linear-gradient(to right, #000000 50%, #d1d1d1 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+}

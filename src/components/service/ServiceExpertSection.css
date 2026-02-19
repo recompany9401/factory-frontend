@@ -1,0 +1,139 @@
+.expert-section {
+  position: relative;
+  width: 100%;
+  padding: 150px 0;
+  color: #fff;
+  overflow: hidden;
+}
+
+.expert-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/sub/service_expert_bg.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.expert-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.7);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.expert-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.expert-header {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.expert-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #91c31d;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.expert-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.expert-content {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.expert-left-visual {
+  flex: 0 0 38%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.worker-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.expert-left-visual:hover .worker-img {
+  transform: scale(1.05);
+}
+
+.expert-right-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.expert-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+}
+
+.expert-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+  border-color: rgba(145, 195, 29, 0.5);
+}
+
+.card-icon-box {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 24px;
+}
+
+.card-icon-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.expert-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  min-height: 3.2rem;
+}
+
+.expert-card p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+  word-break: keep-all;
+}

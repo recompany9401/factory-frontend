@@ -1,0 +1,165 @@
+.news-content,
+.policy-content {
+  height: auto;
+}
+
+.policy-detail-wrapper {
+  padding: 130px 0 80px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  min-height: 52vw;
+}
+
+.policy-detail-container {
+  width: 100%;
+  max-width: 900px;
+}
+
+.policy-header {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.policy-badge {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.policy-date {
+  color: #888;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.policy-title {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.policy-divider {
+  border: 0;
+  height: 1px;
+  background-color: #eee;
+  margin: 30px 0;
+}
+
+.policy-content {
+  min-height: 300px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.policy-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 16px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.policy-content blockquote {
+  border-left: 4px solid #ddd;
+  margin-left: 0;
+  padding-left: 16px;
+  color: #666;
+  font-style: italic;
+}
+
+.policy-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.back-btn {
+  padding: 14px 40px;
+  background-color: #222;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #444;
+}
+
+.policy-loading {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.post-navigation {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-item:last-child {
+  border-bottom: none;
+}
+
+.nav-label {
+  width: 80px;
+  font-weight: 700;
+  color: #555;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.nav-label::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.nav-title {
+  color: #333;
+  font-size: 0.95rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nav-title.clickable {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-title.clickable:hover {
+  color: #f08b2e;
+  text-decoration: underline;
+}
+
+.nav-title.no-post {
+  color: #aaa;
+  cursor: default;
+}

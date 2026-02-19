@@ -1,0 +1,386 @@
+.contents-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.main-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.main-tabs button {
+  padding: 12px 24px;
+  border: none;
+  background: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #888;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+}
+
+.main-tabs button.active {
+  color: #333;
+  border-bottom-color: #333;
+}
+
+.category-tabs {
+  margin-bottom: 15px;
+}
+
+.category-tabs button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background: white;
+  margin-right: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #666;
+}
+
+.category-tabs button.active {
+  background: #333;
+  color: white;
+  border-color: #333;
+}
+
+.action-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.primary-btn {
+  background-color: #f08b2e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  background-color: #f08b2e;
+}
+
+.secondary-btn {
+  background-color: #fff;
+  color: #555;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-table th {
+  background-color: #f1f5f9;
+  font-weight: 600;
+  color: #475569;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.table-thumb {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.badge {
+  background-color: #e2e8f0;
+  color: #475569;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.sm-btn {
+  padding: 5px 10px;
+  margin: 0 2px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sm-btn.danger {
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+.editor-wrapper {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.editor-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.popup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.popup-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+}
+
+.popup-card.active {
+  border-color: #f08b2e;
+}
+
+.popup-img-wrapper {
+  position: relative;
+  height: 150px;
+}
+
+.popup-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.status-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.popup-info {
+  padding: 15px;
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.popup-actions button {
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.popup-actions button.danger {
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.modal-window {
+  background: white;
+  width: 500px;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  animation: slideDown 0.3s ease-out;
+  max-height: 90vh;
+}
+
+.modal-window.wide {
+  width: 800px;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-header {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.close-x {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+}
+
+.close-x:hover {
+  color: #333;
+}
+
+.detail-content {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.detail-content.scrollable {
+  max-height: 70vh;
+}
+
+.modal-footer {
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  background-color: #f9fafb;
+  border-radius: 0 0 12px 12px;
+}
+
+.form-group-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-group-row > div {
+  flex: 1;
+}
+
+.post-view-header {
+  margin-bottom: 20px;
+}
+
+.post-view-header .badge {
+  background-color: #f08b2e;
+  color: white;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.post-view-header h2 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+  color: #111;
+}
+
+.post-view-header .date {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.post-view-thumb {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.post-view-thumb img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 4px;
+}
+
+.post-view-body {
+  line-height: 1.6;
+  color: #333;
+  font-size: 1.05rem;
+  height: 100% !important;
+}
+
+.post-view-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.post-view-body blockquote {
+  border-left: 4px solid #ccc;
+  margin-left: 0;
+  padding-left: 15px;
+  color: #666;
+}
