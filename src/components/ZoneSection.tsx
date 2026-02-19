@@ -59,8 +59,9 @@ const ZoneSection = () => {
   const intervalRef = useRef<number | null>(null);
 
   const startAutoPlay = () => {
-    if (intervalRef.current) clearInterval(intervalRef.current);
-    intervalRef.current = setInterval(() => {
+    if (intervalRef.current) window.clearInterval(intervalRef.current);
+
+    intervalRef.current = window.setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % zones.length);
     }, 4000);
   };
@@ -88,7 +89,7 @@ const ZoneSection = () => {
           duration: 0.8,
           ease: "power2.out",
         },
-        "-=0.4"
+        "-=0.4",
       );
     }, containerRef);
 
@@ -96,7 +97,7 @@ const ZoneSection = () => {
 
     return () => {
       ctx.revert();
-      if (intervalRef.current) clearInterval(intervalRef.current);
+      if (intervalRef.current) window.clearInterval(intervalRef.current);
     };
   }, []);
 
